@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="770.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v2.client.view.Controller">
+   <children>
+      <AnchorPane id="mainPane" fx:id="chatPane" layoutX="14.0" prefHeight="770.0" prefWidth="450.0" stylesheets="@Styles.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="textField" layoutY="483.0" onAction="#actionTextField" prefHeight="39.0" prefWidth="453.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+            <TextArea id="messageField" fx:id="textArea" editable="false" layoutY="71.0" prefHeight="658.0" prefWidth="453.0" stylesheets="@Styles.css" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextArea>
+            <AnchorPane id="infoField" prefHeight="71.0" prefWidth="453.0" stylesheets="@Styles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="#fff8f8" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online:" wrappingWidth="64.13671875" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="infoOnlineText" fill="#fff8f8" layoutX="104.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="42.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="15.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="startPane" fx:id="menuPane" prefHeight="770.0" prefWidth="450.0" stylesheets="@Styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="menuButton" layoutX="195.0" layoutY="483.0" mnemonicParsing="false" onAction="#actionGoToChat" prefHeight="155.0" prefWidth="222.0" stylesheets="@Styles.css" text="Enter">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Button>
+            <TextField id="menuTextField" fx:id="menuTextField" layoutX="29.0" layoutY="148.0" prefHeight="39.0" prefWidth="331.0" stylesheets="@Styles.css">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Text fill="#ee3f11" layoutX="29.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write your nickname" wrappingWidth="383.642578125">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

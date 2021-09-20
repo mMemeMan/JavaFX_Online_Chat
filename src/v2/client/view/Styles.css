@@ -1,0 +1,50 @@
+
+#mainPane {
+    -fx-background-image: url("resources/mountain.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: 530;
+}
+
+#menuButton {
+    -fx-text-fill: #EE3F11;
+    -fx-background-color: null;
+    -fx-border-color: null;
+    -fx-background-radius: 0;
+}
+
+#menuButton:pressed {
+    -fx-text-fill: #FFDF00;
+}
+
+#menuTextField {
+    -fx-border-radius: 30;
+    -fx-background-color: null;
+    -fx-border-color: #EE3F11;
+    -fx-text-fill: #FFDF00;
+}
+
+#startPane {
+    -fx-background-image: url("resources/radStones.jpg");
+}
+
+#infoField {
+    -fx-background-color: rgba(19,18,18,0.3);
+}
+
+.text-area {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #EE3F11;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
